@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    // Output Configuration
+    "outDir": "./dist",                 // Directory for compiled files
+    "rootDir": "./src",                 // Directory for source files
+    "declaration": true,                // Generate .d.ts files for type definitions
+    "declarationMap": true,             // Map declarations back to source files
+
+    // Module and Target Configuration
+    "module": "commonjs",               // Module system for Node.js (adjustable)
+    "target": "ES2019",                 // Target modern JavaScript version
+    "lib": ["ES2019"],                  // Use ES2019 standard library
+
+    // Interoperability
+    "esModuleInterop": true,            // Allow default imports from CommonJS
+    "skipLibCheck": true,               // Skip type checks for libraries
+
+    // Strict Type Checking
+    "strict": true,                     // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file naming
+
+    // Source Maps
+    "sourceMap": true,                  // Generate .map files for debugging
+
+    // Paths
+    "resolveJsonModule": true,          // Allow importing .json files
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules
+
+    // Code Quality
+    "noImplicitAny": true,              // Avoid implicit "any" types
+    "noUnusedLocals": true,             // Report unused local variables
+    "noUnusedParameters": true,         // Report unused function parameters
+    "noImplicitReturns": true,          // Ensure all code paths return
+    "noFallthroughCasesInSwitch": true  // Disallow fallthrough in switch cases
+  },
+  "include": ["src/**/*"],              // Include all TypeScript files in src/
+  "exclude": ["node_modules", "dist", "**/*.test.ts"] // Exclude tests and output
+}
